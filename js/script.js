@@ -97,7 +97,7 @@ const renderBooks = function (arr, element) {
             <img class="card__header-img" src="${item.volumeInfo?.imageLinks.thumbnail}" alt="...">
           </div>
           <div class="card-body">
-            <h3 class="card-title">${item.volumeInfo?.title}</h3>
+            <h5 class="card-title text-truncate">${item.volumeInfo?.title}</h5>
             <p class="card-text mb-1">${item.volumeInfo?.authors}</p>
             <p class="card-text">${item.volumeInfo?.publishedDate}</p>
             <div class="card__btns">

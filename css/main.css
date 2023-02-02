@@ -288,7 +288,17 @@ img {
 }
 
 .card__img {
-  border: 15px solid #f8fafd;
+  max-width: 100%;
+  height: 100%;
+  /* border: 15px solid #f8fafd; */
+  object-fit: contain;
+}
+
+.card-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .card__list {
@@ -302,7 +312,8 @@ img {
 }
 
 .card__item {
-  height: max-content;
+  width: 100%;
+  height: 100%;
 }
 
 .card__header-img {
